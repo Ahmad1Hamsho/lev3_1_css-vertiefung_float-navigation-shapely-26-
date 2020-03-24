@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+body {
+  background-color: black;
+}
+nav {
+  font-family: "Raleway", sans-serif;
+  width: 36vw;
+}
+
+h1 a {
+  color: rgb(185, 184, 184);
+}
+
+h1 a:hover {
+  color: rgb(185, 184, 184);
+}
+
+header {
+  background-color: rgb(44, 44, 44);
+  padding-left: 3vw;
+  height: 76px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  flex-direction: row;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 0;
+}
+
+li {
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+li a {
+  font-size: 1rem;
+  color: #fff;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  background-color: rgb(44, 44, 44);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 13px;
+  left: 0;
+  display: none;
+  text-align: left;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li ul {
+  background-color: rgb(44, 44, 44);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -13px;
+  left: 80px;
+  transition: all 0.5s ease;
+  display: none;
+  text-align: left;
+}
